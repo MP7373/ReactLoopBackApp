@@ -7,26 +7,33 @@ class Navbar extends Component {
       <div>
         <nav className="green darken-4">
           <div className="nav-wrapper">
-            <a href="/" className="brand-logo">Meetups</a>
+            <div className="center-align">
+              <a href="/" className="brand-logo">Meetups</a>
+            </div>
             <a data-activates="main-menu" className="button-collapse show-on-large">
               <i className="fa fa-bars"></i>
             </a>
             <ul className="right hide-on-small-only">
               <li>
                 <Link to="/">
-                  <i className="fa fa-users">Meetups</i>
+                  <i className="fa fa-users"></i> Meetups
                 </Link>
               </li>
             </ul>
             <ul className="side-nav" id="main-menu">
               <li>
                 <Link to="/">
-                  <i className="fa fa-users">Meetups</i>
+                  <i className="fa fa-users"></i> Meetups
                 </Link>
               </li>
               <li>
                 <Link to="/meetups/add">
-                  <i className="fa fa-users">Add Meetup</i>
+                  <i className="fa fa-plus"></i> Add Meetup
+                </Link>
+              </li>
+              <li>
+                <Link to="/about">
+                  <i className="fa fa-question-circle"></i> About
                 </Link>
               </li>
             </ul>
